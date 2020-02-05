@@ -58,7 +58,10 @@ nav:hover a{
 }
 
 article{
-  background-image:trans-bg.gif;
+  background-image:url(trans-bg.gif;
+  border: 1px, solid #CCCCCC;
+  left-margin: 180px;
+    padding:10px;
   
 }
 
@@ -67,5 +70,7 @@ footer{
   text-align: center;
 }
 
-footer li {display: inline;
+footer li {
+    display: inline;
+    padding: 10px;
 }
