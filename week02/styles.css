@@ -22,7 +22,9 @@ header h1 {
     background-position: left top;
 }
 
-
+blockquote {
+background-color: #FFE597;
+}
 #container{
   margin-bottom: 30px;
 }
@@ -35,7 +37,7 @@ nav{
 nav ul {
   padding: 0px;
   margin: 0px;
-  list-style-type: none;
+  list-style-type: square;
   color:#7c1a00;
 }
 
@@ -56,8 +58,9 @@ nav a {
 header h3 {
   background-image: url(header-star-1.gif);
   padding left: 20px;
+}
 nav:hover a{
-  background-color:  #7C1A00;
+  background-color:  #FFE597;
 }
 
 #container id article{
