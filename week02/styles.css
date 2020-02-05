@@ -9,6 +9,7 @@ body {
   background-image: url(page-bg.gif);
   background-repeat: no-repeat;
   background-color: #F7F3DE;
+   background-attachment: fixed;
 }
  
 header h1 {
