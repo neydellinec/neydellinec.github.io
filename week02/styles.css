@@ -60,8 +60,8 @@ header h3 {
   background-image: url(header-star-1.gif);
   padding left: 20px;
 }
-nav:hover a{
-  background-color:  #FFE597;
+ nav:hover a {
+  background-color:   #FFE597;
 }
 
 #container id article{
@@ -81,3 +81,11 @@ footer li {
     display: inline;
     padding: 10px;
 }
+
+ h2 {
+  border-left: 20px solid #8C9273;
+border-bottom:5px solid #8C9273;
+ padding-left : 5px
+}
+
+
