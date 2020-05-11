@@ -46,7 +46,7 @@ var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
     </script>
     
   </head>
- <body onload="updateTime()">
+<body onload="setInterval('updateTime()',1000)">
    <div id="clock"></div>
   </body>
 </html>
