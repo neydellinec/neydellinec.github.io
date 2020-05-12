@@ -44,7 +44,15 @@ var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;
   }
       
     </script>
-    
+      <style>
+    div#clock {
+    text-align: center;
+    background-color: pink;
+    color: white;
+      padding: 10px;
+      margin:10px;
+    }
+  </style>
   </head>
 <body onload="setInterval('updateTime()',1000)">
    <div id="clock"></div>
