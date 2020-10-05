@@ -1,23 +1,15 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title> Some Events </title>
-<link rel="stylesheet" href="myStyles.css">
-<script>
-function showMessage() {
-  alert( 'Hello everyone!' );
-}
- function showMessage(parameters) {
-  ...body...
-}
-</script>
+  <title>Some Event</title>
 </head>
-<body>
 
-<script> 
-
-
-</script>
+<body onload="document.myForm.textButton.focus();">
+<form name="myForm">
+  <input type="text" value="Hello"
+         name="textButton"
+          onblur="alert(this.value);">
+</form>
+<br>
+<h4>Click outside the text element, or use the Tab key...</h4>
 </body>
 </html>
