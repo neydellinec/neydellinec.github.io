@@ -1,15 +1,19 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Some Event</title>
-</head>
-
-<body onload="document.myForm.textButton.focus();">
-<form name="myForm">
-  <input type="text" value="This page has loaded."
-         name="button"
-          onblur="alert(this.value);">
-</form>
-<br>
-<h4>Click outside the text element, or use the Tab key...</h4>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Some Events</title>
+      <script>
+  function showAlert() {
+    var myText = "The button has been clicked.";
+    alert (myText);
+  }
+  </script>
+  </head>
+   <body>
+   
+     <button onclick="showAlert()">Page has loaded.</button>
+     
+  </body>
 </html>
+
