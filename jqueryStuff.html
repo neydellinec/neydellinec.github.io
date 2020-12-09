@@ -5,19 +5,16 @@
   <title>jQuery Intro Assignment</title>
   <style type="text/css">
     <script type="text/javascript" src="jquery.js"></script>
-    
+ 
    /* <![CDATA[ */
     $(document).ready(function()
     {
-      $("p").mouseover(function(){$(this).css({'font-size': '1.3em', 'color': 'red'});});
-      $("p").mouseout(reduceText);
+      $("#hide").click(function(){
+    $("#funStuff").hide();});
     });
-  
-    function reduceText()
-    {
-      var cssObj = {'font-size': '1em', 'color': 'black'};
-      $(this).css(cssObj);
-    }
+     $("#show").click(function(){
+    $("#funStuff").show();
+    });
     /* ]]> */
     body { font-family: Arial,sans-serif; background-color: #ffd; }
     #mainDiv { width: 800px; margin: 0 auto; position: relative; }
