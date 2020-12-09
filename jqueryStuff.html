@@ -5,6 +5,12 @@
   <title>jQuery Intro Assignment</title>
   <style type="text/css">
     <script type="text/javascript" src="jquery.js"></script>
+    
+   $(document).ready(function()
+    {
+      $("p").mouseover(function(){$(this).css({'font-size': '1.3em', 'color': 'red'});});
+      $("p").mouseout(reduceText);
+    });
     body { font-family: Arial,sans-serif; background-color: #ffd; }
     #mainDiv { width: 800px; margin: 0 auto; position: relative; }
     button { margin: 0 0 10px 0; }
