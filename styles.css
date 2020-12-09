@@ -73,7 +73,7 @@ ul {
 }
  
 a {
-    color: #1D745A;
+    color: #1c1c1c;
 }
  
 h1 {
@@ -103,7 +103,7 @@ article {
  
 header {
     background: #1a0296;
-    padding: 15px 36px;
+    padding: 26px 36px;
 }
  
         /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
@@ -184,7 +184,7 @@ a.to_nav:focus {
  
 #primary_nav li a:hover,
 #primary_nav li a:focus {
-    color: #1c1c1c;
+    color: #1a0296;
     background: #ccc;
 }
 
