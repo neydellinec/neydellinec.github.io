@@ -234,3 +234,9 @@ footer {
  
 }
 
+#primary_nav li.education/Trainingstudent {
+    display: none;
+}
+#primary_nav li.retentionalert {
+    display: none;
+}
