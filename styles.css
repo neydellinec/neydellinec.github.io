@@ -187,7 +187,9 @@ a.to_nav:focus {
     color: #1c1c1c;
     background: #ccc;
 }
-
+#primary_nav li.top {
+    display: none;
+}
 /*footer*/
  
 footer {
@@ -232,6 +234,4 @@ footer {
     }
  
 }
-#primary_nav li.top {
-    display: none;
-}
+
