@@ -29,15 +29,16 @@ Your browser does not support the HTML5 canvas tag.
   <script>
     var c = document.getElementById('myCanvas');
     var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.rect(20, 20, 150, 100);
+ctx.fillStyle = "red";
+ctx.fill();
 
+ctx.beginPath();
+ctx.rect(40, 40, 150, 100);
+ctx.fillStyle = "blue";
+ctx.fill();
     // Main face (big circle)
-
-    ctx.beginPath();
-    ctx.arc(150, 150, 100, 0, 2 * Math.PI);
-    ctx.fillStyle = "yellow";
-    ctx.fill();
-    ctx.stroke();
-    ctx.closePath();
 
     // Smile
 
