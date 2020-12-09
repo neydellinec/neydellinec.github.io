@@ -58,7 +58,7 @@ table {
 /*begin our styles*/
  
 body {
-    font: 16px/1.4em ’PT Sans’, sans-serif;;
+    font: 16px/1.4em ’PT Sans’, sans-serif;
     color: #1c1c1c;
 }
  
@@ -187,9 +187,8 @@ a.to_nav:focus {
     color: #1c1c1c;
     background: #ccc;
 }
-#primary_nav li.top {
-    display: none;
-}
+
+
 /*footer*/
  
 footer {
