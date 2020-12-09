@@ -103,7 +103,7 @@ article {
  
 header {
     background: #1a0296;
-    padding: 10px 100px;
+    padding: 20px 768px;
 }
  
         /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
@@ -139,7 +139,7 @@ a.to_nav {
     background: #4e4e4e;
     text-decoration: none;
     padding: 0 10px;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 22px;
     height: 22px;
@@ -161,7 +161,7 @@ a.to_nav:focus {
 #primary_nav ul {
     list-style: none;
     background: #1a0296;
-    padding: 5px 0;
+    padding: 20px 0;
 }
  
 #primary_nav li a {
