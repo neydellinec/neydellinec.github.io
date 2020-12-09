@@ -161,12 +161,12 @@ a.to_nav:focus {
 #primary_nav ul {
     list-style: none;
     background: #1a0296;
-    padding: 768px 0;
+    padding: 20px 0;
 }
  
 #primary_nav li a {
     display: block;
-    padding: 0 20px;
+    padding: 0 768px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
