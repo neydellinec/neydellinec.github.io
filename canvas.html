@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,13 @@
 <body>
   <div id="mainDiv">
     <header>
-      <h3>A Sample Canvas</h3>
+      <h3>Coding with a smile</h3>
     </header>
     
     <section>
       <h4>Here is my canvas tag:</h4>
-     <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
-Your browser does not support the HTML canvas tag.
+      <canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+Your browser does not support the HTML5 canvas tag.
 </canvas>
     </section>
     
@@ -28,14 +29,43 @@ Your browser does not support the HTML canvas tag.
   <script>
     var c = document.getElementById('myCanvas');
     var ctx = c.getContext("2d");
+
+    // Main face (big circle)
+
     ctx.beginPath();
     ctx.arc(150, 150, 100, 0, 2 * Math.PI);
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "yellow";
     ctx.fill();
     ctx.stroke();
-</canvas>
-    
-    
+    ctx.closePath();
+
+    // Smile
+
+    ctx.beginPath();
+    ctx.arc(150, 150, 75, 0, Math.PI);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.closePath();
+
+    // Left eye
+
+    ctx.beginPath();
+    ctx.arc(110, 110, 20, 0, 2 * Math.PI);
+    ctx.fillStyle = "black";
+    ctx.lineWidth = 1;
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+
+    // Right eye
+
+    ctx.beginPath();
+    ctx.arc(185, 110, 20, 0, 2 * Math.PI);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    ctx.stroke();
+    ctx.closePath();
+
   </script>
 
 </body>
