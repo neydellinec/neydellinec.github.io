@@ -166,7 +166,7 @@ a.to_nav:focus {
  
 #primary_nav li a {
     display: block;
-    padding: 0 768px;
+    padding: 0 20px;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
