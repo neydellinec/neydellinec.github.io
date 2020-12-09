@@ -187,7 +187,7 @@ a.to_nav:focus {
     color: #1c1c1c;
     background: #ccc;
 }
- 
+
 /*footer*/
  
 footer {
@@ -231,4 +231,7 @@ footer {
         border-radius: 2px;
     }
  
+}
+#primary_nav li.top {
+    display: none;
 }
