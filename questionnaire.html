@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Questionaire</title>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var actors = new Array();
+    
+    function writeInfo()
+    {
+      var contentString = "";
+      
+      for (var i = 0; i < info.length; i++)
+      {
+        contentString += info[i] + "<br />";
+      }
+      
+      document.getElementById("contentDiv").innerHTML = contentString;
+    }
+
+    function askForName()
+    {
+      var keepGoing = true;
+      var theName;
+      
+      while (keepGoing)
+      {
+        theName = prompt("Give me your name, please.  Press Cancel or press Enter with nothing entered, when you are done.","");
+        if ((theName != null) && (theName != ""))
+        {
+          info[info.length] = theName;
+        }
+        else
+        {
+          keepGoing = false;
+        }
+      }
+      
+      writeInfo();
+    }
+    /* ]]> */
+  </script>
+</head>
+
+<body onload="askForName();">
+  <div id="mainDiv">
+    <h3></h3>
+
+    <h4></h4>
+
+    <div id="contentDiv"></div>
+  </div>
+</body>
+</html>
