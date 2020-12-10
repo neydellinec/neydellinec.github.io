@@ -1,36 +1,170 @@
-<div id="container">
 
-  <h1>Discover Your Fortune!</h1>
 
-  <button onclick="tellFortune()">Press to find out your fortune!</button>
+<!DOCTYPE html>
 
- 
-  <br/><br/>
 
-  <!--This is where the random text will go-->
-  <div id="fortune"></div>
-  
- 
-var fortunes = [
-  // add more array items here if you want, make sure you put a comma between each one. You can use HTML here! Just remember that if it contains quotes, they need to be escaped, like this: \"
-  "You will be a doctor in New York, and married to Susan with 3 kids.",
-  "You will be a nurse in Georgia, and married to Henry with 1 kid.",
-  "You will be a teacher in Tennesse, and married to Hunter with 2 kids"
-];
 
-function tellFortune() {
-  
-  // generate a random number between 0 and the number of the array items
-  var randomNumber = Math.floor(Math.random() * fortunes.length);
 
-  // print the random number to the console log to make sure it's working
-  console.log("random number: " + randomNumber);
+<html>
 
-  // take the fortune at the random spot in the array and insert it into the "fortune" div
- document.getElementById("fortune").innerHTML = fortunes[randomNumber];
+
+<style>
+
+
+input[type=text], select {
+
+
+width: 100%;
+
+
+padding: 12px 20px;
+
+
+margin: 10px 0;
+
+
+display: inline-block;
+
+
+border: 1px solid #ccc;
+
+
+border-radius: 6px;
+
+
+box-sizing: border-box;
+
+
 }
 
-function reset() {
-  // what goes here? (hint: make the fortune div contain an empty string)
-  
+
+div {
+
+
+border-radius: 5px;
+
+
+background-color: #F5F5F5;
+
+
+padding: 18px;
+
+
 }
+
+
+</style>
+
+
+<body>
+
+
+<div>
+
+
+Number of Kids: <input type="text" id="numKids">
+
+
+Partner Name :<input type="text" id="partner">
+
+
+Geographic location :<input type="text" id="geolocation">
+
+
+Job Title :<input type="text" id="jobTitle">
+
+
+<p>Click the button to display your fortune</p>
+
+
+<button onclick="myFunction()" type="submit">Check Your Fortune</button>
+
+
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function myFunction() {
+
+
+var numKids = document.getElementById("numKids").value;
+
+
+var partner = document.getElementById("partner").value;
+
+
+var geolocation = document.getElementById("geolocation").value;
+
+
+var jobTitle = document.getElementById("jobTitle").value;
+
+
+
+
+
+
+var fortune = 'You will be a X '+jobTitle+' in Y'+geolocation+', and married to Z'+partner+ ' with N'+numKids+ ' kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a doctor in Tennesse, and married to Luna with 4 kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a lawyer in Washington, and married to Maria with 2 kids.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+{var fortune = 'You will be a nurse in Tennesse, and married to Hunter with 1 kid.';
+
+
+document.getElementById("demo").innerHTML = fortune;}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</div>
+
+
+</body>
+
+
+</html>
+
