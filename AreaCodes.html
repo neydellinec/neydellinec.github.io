@@ -13,28 +13,27 @@
 
     function checkTheCode()
     {
-      
-      var areaCode = document.getElementById("theCode").options[document.getElementById("theCode").selectedIndex].value;
       var msg = "";
+      var areaCode = document.getElementById("theCode").options[document.getElementById("theCode").selectedIndex].value;
       switch (parseInt(areaCode))
       {
-        case "Boston":
+        case 617:
           msg = "Boston's area code is " + areaCode;
     
-        case "Manhattan":
+        case 212:
           msg = "Manhattan's area code is " + areaCode;
     
-        case "San Fransisco":
+        case 415:
           msg = "San Francisco's area code is " + areaCode;
     
-        case "Tampa":
+        case 813:
           msg = "Tampa's area code is " + areaCode;
 
       }
       
-      alert(msg);}
+      alert(msg);
 
-    
+    }
 
     /* ]]> */
 
