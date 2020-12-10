@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>jQuery Intro Assignment</title>
-   <script type="text/javascript" src="jquery.js"></script>
-    <style type="text/css">
+
+    <style>
     body { font-family: Arial,sans-serif; background-color: #ffd; }
     #mainDiv { width: 800px; margin: 0 auto; position: relative; }
     button { margin: 0 0 10px 0; }
@@ -14,15 +14,15 @@
           crossorigin="anonymous">
   </script>
   <script>
-   /* <![CDATA[ */
+  
     $(document).ready(function()
     {
       $("#hide").click(function(){
     $("#funStuff").slideUp();});
-    });
+   
      $("#show").click(function(){
     $("#funStuff").slideDown();
-    });
+    });  });
     /* ]]> */
     </script>
   
@@ -32,7 +32,7 @@
   <div id="mainDiv">
     <h3>jQuery Intro Assignment</h3>
     <div id="mainMenu">
-      <div id="buttons">
+      <div id="buttonStuff">
         <button id="hide">Hide</button>
         <button id="show">Show</button>
       </div>
